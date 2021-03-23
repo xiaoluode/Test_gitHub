@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D9922ACCC0EFC2E2A6AC2B1 /* libPods-gitHub_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1FFE545177811710F90E68 /* libPods-gitHub_test.a */; };
 		467869F32609AC8800CEF126 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 467869F22609AC8800CEF126 /* AppDelegate.m */; };
 		467869F62609AC8800CEF126 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 467869F52609AC8800CEF126 /* SceneDelegate.m */; };
 		467869F92609AC8800CEF126 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467869F82609AC8800CEF126 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FA8C02852041C9BCE4D4B52 /* Pods-gitHub_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitHub_test.release.xcconfig"; path = "Target Support Files/Pods-gitHub_test/Pods-gitHub_test.release.xcconfig"; sourceTree = "<group>"; };
 		467869EE2609AC8800CEF126 /* gitHub_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitHub_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467869F12609AC8800CEF126 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		467869F22609AC8800CEF126 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		46786A002609AC8900CEF126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46786A022609AC8900CEF126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46786A032609AC8900CEF126 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D1FFE545177811710F90E68 /* libPods-gitHub_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gitHub_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78FFB5F9814939CAAABEEBFE /* Pods-gitHub_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitHub_test.debug.xcconfig"; path = "Target Support Files/Pods-gitHub_test/Pods-gitHub_test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9922ACCC0EFC2E2A6AC2B1 /* libPods-gitHub_test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D743DBE6C70EDED5E4BD0FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78FFB5F9814939CAAABEEBFE /* Pods-gitHub_test.debug.xcconfig */,
+				1FA8C02852041C9BCE4D4B52 /* Pods-gitHub_test.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		467869E52609AC8800CEF126 = {
 			isa = PBXGroup;
 			children = (
 				467869F02609AC8800CEF126 /* gitHub_test */,
 				467869EF2609AC8800CEF126 /* Products */,
+				2D743DBE6C70EDED5E4BD0FA /* Pods */,
+				8345E556A22C8650A5C3C0D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +93,14 @@
 			path = gitHub_test;
 			sourceTree = "<group>";
 		};
+		8345E556A22C8650A5C3C0D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D1FFE545177811710F90E68 /* libPods-gitHub_test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46786A072609AC8900CEF126 /* Build configuration list for PBXNativeTarget "gitHub_test" */;
 			buildPhases = (
+				2A15663C9DA5477918B2C7C7 /* [CP] Check Pods Manifest.lock */,
 				467869EA2609AC8800CEF126 /* Sources */,
 				467869EB2609AC8800CEF126 /* Frameworks */,
 				467869EC2609AC8800CEF126 /* Resources */,
@@ -140,6 +166,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A15663C9DA5477918B2C7C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gitHub_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		467869EA2609AC8800CEF126 /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		46786A082609AC8900CEF126 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78FFB5F9814939CAAABEEBFE /* Pods-gitHub_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +356,7 @@
 		};
 		46786A092609AC8900CEF126 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA8C02852041C9BCE4D4B52 /* Pods-gitHub_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
